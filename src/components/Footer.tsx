@@ -1,3 +1,5 @@
+import { MdOutlineArrowOutward } from "react-icons/md";
+
 function Footer() {
   return (
     <>
@@ -21,10 +23,20 @@ function Footer() {
       </div>
       <div className="contact">
         <p className="specialText">Contact</p>
-        <p>
-          LinkedIn Twitter Github DEV.to Hashnode daily.dev
-          contacto@diogoagostinho.pt
-        </p>
+        <li>
+          <div className="textLink">
+            <p>LinkedIn</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>X</li>
+        <li>GitHub</li>
+        <li>DEV.to</li>
+        <li>Hashnode</li>
+        <li>daily.dev</li>
+        <p>contacto@diogoagostinho.pt</p>
       </div>
     </>
   );

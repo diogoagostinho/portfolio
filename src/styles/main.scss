@@ -86,10 +86,32 @@ button:hover {
   padding: 1em;
   p,
   li {
-    line-height: 1em;
+    line-height: 24px;
   }
 
   .specialText {
     margin-bottom: 10px;
   }
+}
+
+.contact {
+  li {
+    list-style: none;
+  }
+}
+
+.textLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.textLink:hover {
+  color: rgba($color: #ffffff, $alpha: 0.5);
+  cursor: pointer;
+  .textLinkArrow {
+    transform: translateX(10px);
+  }
+}
+.textLinkArrow {
+  transition: 0.3s;
 }
