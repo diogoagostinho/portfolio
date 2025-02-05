@@ -14,11 +14,36 @@ function Navbar() {
           </div>
         </div>
         <div className="navbar__right">
-          <Button text={"Home"} styleClass={"ghost"} isPop={false} />
-          <Button text={"Websites"} styleClass={"ghost"} isPop={false} />
-          <Button text={"Photography"} styleClass={"ghost"} isPop={false} />
-          <Button text={"Games"} styleClass={"ghost"} isPop={false} />
-          <Button text={"Music"} styleClass={"ghost"} isPop={false} />
+          <Button
+            text={"Home"}
+            styleClass={"ghost"}
+            isPop={false}
+            linkTo={"/"}
+          />
+          <Button
+            text={"Websites"}
+            styleClass={"ghost"}
+            isPop={false}
+            linkTo={"/websites"}
+          />
+          <Button
+            text={"Photography"}
+            styleClass={"ghost"}
+            isPop={false}
+            linkTo={"/photography"}
+          />
+          <Button
+            text={"Games"}
+            styleClass={"ghost"}
+            isPop={false}
+            linkTo={"/games"}
+          />
+          <Button
+            text={"Music"}
+            styleClass={"ghost"}
+            isPop={false}
+            linkTo={"/music"}
+          />
         </div>
       </div>
     </>

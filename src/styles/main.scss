@@ -1,6 +1,16 @@
 // Variables
 $darkGreen: #013220;
 $forestGreen: #3a5a40;
+
+$badgeGreenText: #22543d;
+$badgeGreenBackground: #c6f6d5;
+$badgeBlueText: #2a4365;
+$badgeBlueBackground: #bee3f8;
+$badgeRedText: #822727;
+$badgeRedBackground: #fed7d7;
+$badgePurpleText: #44337a;
+$badgePurpleBackground: #e9d8fd;
+
 $simpleGray: #edf2f7;
 $hoverGray: #e6e9ed;
 
@@ -28,6 +38,18 @@ body {
   background-color: white;
   padding: 0;
   margin: 0;
+}
+
+h3 {
+  color: rgba($color: #000000, $alpha: 0.4);
+  font-weight: normal;
+  line-height: 0px;
+}
+
+hr {
+  height: 1px;
+  background: black;
+  opacity: 0.2;
 }
 
 // Button
@@ -95,6 +117,9 @@ button:hover {
     padding: 1em;
   }
 }
+.topicSeparation {
+  padding-top: 1rem;
+}
 
 //Footer
 // *********************************
@@ -142,9 +167,83 @@ button:hover {
 // PageInfoSection
 // *********************************
 .pageDescription {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 .pageInfoTitle {
   font-weight: bold;
   line-height: 2px;
+}
+
+//Home
+// *********************************
+.badgeRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  .badge {
+    line-height: 0px;
+    padding: 0px 8px;
+    border-radius: 2px;
+    font-size: 10pt;
+  }
+  .green {
+    background-color: $badgeGreenBackground;
+    color: $badgeGreenText;
+  }
+  .blue {
+    background-color: $badgeBlueBackground;
+    color: $badgeBlueText;
+  }
+  .red {
+    background-color: $badgeRedBackground;
+    color: $badgeRedText;
+  }
+  .purple {
+    background-color: $badgePurpleBackground;
+    color: $badgePurpleText;
+  }
+}
+.workDate {
+  line-height: 0px;
+  color: rgba($color: #000000, $alpha: 0.5);
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+//FeaturedRow
+// *********************************
+.featuredRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.featuredRowImages {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 auto;
+    border-radius: 2px;
+  }
+}
+@media (min-width: 600px) {
+  .featuredRowImages img {
+    width: 10px;
+  }
+}
+@media (max-width: 599px) {
+  .featuredRowImages {
+    flex-direction: column;
+  }
 }
