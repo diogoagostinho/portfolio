@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <div className="mainContent">
         {" "}
         <Navbar />
+        <Home />
       </div>
+
       <div className="footerContent">
         {" "}
         <Footer />

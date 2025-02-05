@@ -1,11 +1,27 @@
+// Variables
 $darkGreen: #013220;
 $forestGreen: #3a5a40;
 $simpleGray: #edf2f7;
 $hoverGray: #e6e9ed;
 
+// General
 * {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: $simpleGray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $forestGreen;
 }
 
 body {
@@ -14,6 +30,8 @@ body {
   margin: 0;
 }
 
+// Button
+// *********************************
 button {
   padding: 12px 20px;
   color: black;
@@ -26,7 +44,6 @@ button:hover {
   cursor: pointer;
   background-color: $hoverGray;
 }
-
 .subtle {
   background-color: $simpleGray;
 }
@@ -34,6 +51,8 @@ button:hover {
   background-color: transparent;
 }
 
+// Navbar
+// *********************************
 .navbar {
   display: flex;
   flex-direction: row;
@@ -59,6 +78,8 @@ button:hover {
   gap: 1em;
 }
 
+// App
+// *********************************
 .appContainer {
   display: flex;
   flex-direction: row;
@@ -75,11 +96,12 @@ button:hover {
   }
 }
 
+//Footer
+// *********************************
 .specialText {
   font-weight: bold;
   color: rgba($color: #ffffff, $alpha: 0.5);
 }
-
 .about,
 .skills,
 .contact {
@@ -88,22 +110,23 @@ button:hover {
   li {
     line-height: 24px;
   }
-
   .specialText {
     margin-bottom: 10px;
   }
 }
-
 .contact {
   li {
     list-style: none;
   }
 }
-
 .textLink {
   display: flex;
   flex-direction: row;
   align-items: center;
+  p {
+    padding: 0;
+    margin: 0;
+  }
 }
 .textLink:hover {
   color: rgba($color: #ffffff, $alpha: 0.5);
@@ -114,4 +137,14 @@ button:hover {
 }
 .textLinkArrow {
   transition: 0.3s;
+}
+
+// PageInfoSection
+// *********************************
+.pageDescription {
+  padding: 1rem 0;
+}
+.pageInfoTitle {
+  font-weight: bold;
+  line-height: 2px;
 }

@@ -23,6 +23,7 @@ function Footer() {
       </div>
       <div className="contact">
         <p className="specialText">Contact</p>
+
         <li>
           <div className="textLink">
             <p>LinkedIn</p>
@@ -31,11 +32,46 @@ function Footer() {
             </div>
           </div>
         </li>
-        <li>X</li>
-        <li>GitHub</li>
-        <li>DEV.to</li>
-        <li>Hashnode</li>
-        <li>daily.dev</li>
+        <li>
+          <div className="textLink">
+            <p>X</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <p>GitHub</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <p>DEV.to</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <p>Hashnode</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <p>daily.dev</p>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
         <p>contacto@diogoagostinho.pt</p>
       </div>
     </>

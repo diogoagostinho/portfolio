@@ -6,7 +6,7 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar__left">
           <div className="logo">
-            <img src="/public/logo-holographic.png" />
+            <img src="/logo-holographic.png" />
           </div>
           <div className="title">
             <h1>PORTFOLIO</h1>
