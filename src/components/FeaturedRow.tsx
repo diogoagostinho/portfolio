@@ -14,8 +14,9 @@ function FeaturedRow(props: {
         <Button
           text={props.buttonTo}
           styleClass={"subtle"}
-          isPop={true}
+          isPop={false}
           linkTo={"/" + props.buttonTo}
+          isArrow={true}
         />
       </div>
       <div className="featuredRowImages">

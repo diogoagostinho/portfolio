@@ -40,6 +40,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 h3 {
   color: rgba($color: #000000, $alpha: 0.4);
   font-weight: normal;
@@ -61,6 +65,12 @@ button {
   border: none;
   transition: 0.3s;
   font-weight: 500;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  gap: 3px;
 }
 button:hover {
   cursor: pointer;
@@ -245,5 +255,26 @@ button:hover {
 @media (max-width: 599px) {
   .featuredRowImages {
     flex-direction: column;
+  }
+}
+
+// Websites
+// *********************************
+.websiteList {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  background: red;
+  background-color: red;
+}
+.websiteSingleItem {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  .websiteSingleItem__top {
+    max-width: fit-content;
+    img {
+      width: fit-content;
+    }
   }
 }
