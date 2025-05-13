@@ -42,6 +42,10 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgba($color: #ffffff, $alpha: 0.5);
 }
 
 h3 {
@@ -52,6 +56,7 @@ h3 {
 
 hr {
   height: 1px;
+  width: 100%;
   background: black;
   opacity: 0.2;
 }
@@ -117,14 +122,19 @@ button:hover {
   flex-direction: row;
 
   .mainContent {
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    width: 75vw;
     padding: 1em;
+    overflow-x: hidden;
   }
   .footerContent {
-    width: 20%;
+    width: 25vw;
     background-color: $darkGreen;
     color: white;
     padding: 1em;
+    overflow-x: hidden;
   }
 }
 .topicSeparation {
@@ -158,6 +168,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: rgba($color: #ffffff, $alpha: 1);
   p {
     padding: 0;
     margin: 0;
@@ -261,20 +272,77 @@ button:hover {
 // Websites
 // *********************************
 .websiteList {
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  width: fit-content;
-  background: red;
-  background-color: red;
+  gap: 2rem;
+  justify-content: left;
 }
 .websiteSingleItem {
-  display: flex;
-  flex-direction: column;
-  max-width: fit-content;
+  width: 30vw;
   .websiteSingleItem__top {
     max-width: fit-content;
     img {
-      width: fit-content;
+      width: 100%;
+      border-radius: 5px;
+
+      .musicItemImage {
+      }
+    }
+  }
+}
+
+// Photography
+// ******************************
+
+.albumList {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .albumShowcaseItem {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .albumShowcaseTop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .albumImagesTopRow {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between; /* optional: space between images */
+      width: 100%;
+      overflow: hidden;
+      margin: 1rem 0;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: calc(100% / 3); /* ensures 3 images fit exactly */
+        object-fit: contain;
+        border-radius: 5px;
+      }
+    }
+    .albumImagesBottomRow {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between; /* optional: space between images */
+      width: 100%;
+      overflow: hidden;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: auto;
+        max-width: calc(100% / 3); /* ensures 3 images fit exactly */
+        object-fit: contain;
+        border-radius: 5px;
+      }
     }
   }
 }

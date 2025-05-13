@@ -73,7 +73,17 @@ function Footer() {
             </div>
           </div>
         </li>
-        <p>contacto@diogoagostinho.pt</p>
+        <br />
+        <li>
+          <div className="textLink">
+            <a href="mailto:contacto.diogoagostinho@gmail.com">
+              <p>Email me</p>
+            </a>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
       </div>
     </>
   );

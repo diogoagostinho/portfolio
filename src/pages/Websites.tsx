@@ -41,6 +41,14 @@ function Websites() {
           linkTo={"https://www.google.pt/"}
           image={"/placeholder.jpeg"}
         />
+        <WebsiteItem
+          title={"Nanocard"}
+          description={
+            "Here is every website i have developed, going from just plain HTML, CSS and JS to full stack projects made with React and various back-end apps like MongoDB or MySQL."
+          }
+          linkTo={"https://www.google.pt/"}
+          image={"/placeholder.jpeg"}
+        />
       </div>
     </>
   );
