@@ -100,6 +100,7 @@ button:hover {
     height: 4em;
   }
 }
+
 .navbar__left {
   display: flex;
   flex-direction: row;
@@ -112,7 +113,13 @@ button:hover {
 .navbar__right {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  .buttonList {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  .hamburgerList {
+  }
 }
 
 // App
@@ -124,12 +131,13 @@ button:hover {
   .mainContent {
     display: flex;
     flex-direction: column;
-    width: max-content;
     width: 75vw;
     padding: 1em;
     overflow-x: hidden;
   }
   .footerContent {
+    display: flex;
+    flex-direction: column;
     width: 25vw;
     background-color: $darkGreen;
     color: white;
@@ -258,16 +266,6 @@ button:hover {
     border-radius: 2px;
   }
 }
-@media (min-width: 600px) {
-  .featuredRowImages img {
-    width: 10px;
-  }
-}
-@media (max-width: 599px) {
-  .featuredRowImages {
-    flex-direction: column;
-  }
-}
 
 // Websites
 // *********************************
@@ -342,6 +340,51 @@ button:hover {
         max-width: calc(100% / 3); /* ensures 3 images fit exactly */
         object-fit: contain;
         border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .featuredRowImages img {
+    width: 10px;
+  }
+}
+@media (max-width: 599px) {
+  .featuredRowImages {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .appContainer {
+    flex-direction: column;
+    width: 100%;
+
+    .mainContent {
+      width: fit-content;
+    }
+    .footerContent {
+      width: fit-content;
+    }
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1130px) {
+  .appContainer {
+    .footerContent {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .about {
+        width: 33%;
+      }
+      .skills {
+        width: 33%;
+      }
+      .contact {
+        width: 33%;
       }
     }
   }

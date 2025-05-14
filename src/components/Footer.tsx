@@ -24,50 +24,45 @@ function Footer() {
       </div>
       <div className="contact">
         <p className="specialText">Contact</p>
+        <li>
+          <div className="textLink">
+            <a target="_blank" href="https://github.com/diogoagostinho">
+              <p>GitHub</p>
+            </a>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/diogo-agostinho-b99a33224/"
+            >
+              <p>LinkedIn</p>
+            </a>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div className="textLink">
+            <a target="_blank" href="https://dev.to/diogoagostinho">
+              <p>DEV.to</p>
+            </a>
+            <div className="textLinkArrow">
+              <MdOutlineArrowOutward />
+            </div>
+          </div>
+        </li>
 
         <li>
           <div className="textLink">
-            <p>LinkedIn</p>
-            <div className="textLinkArrow">
-              <MdOutlineArrowOutward />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="textLink">
-            <p>X</p>
-            <div className="textLinkArrow">
-              <MdOutlineArrowOutward />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="textLink">
-            <p>GitHub</p>
-            <div className="textLinkArrow">
-              <MdOutlineArrowOutward />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="textLink">
-            <p>DEV.to</p>
-            <div className="textLinkArrow">
-              <MdOutlineArrowOutward />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="textLink">
-            <p>Hashnode</p>
-            <div className="textLinkArrow">
-              <MdOutlineArrowOutward />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div className="textLink">
-            <p>daily.dev</p>
+            <a target="_blank" href="https://app.daily.dev/diogoagostinho">
+              <p>daily.dev</p>
+            </a>
             <div className="textLinkArrow">
               <MdOutlineArrowOutward />
             </div>
