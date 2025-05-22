@@ -1,5 +1,7 @@
 import Badge from "../components/Badge";
-import FeaturedRow from "../components/FeaturedRow";
+{
+  /* import FeaturedRow from "../components/FeaturedRow"; */
+}
 import PageInfoSection from "../components/PageInfoSection";
 import { useEffect } from "react";
 
@@ -55,6 +57,7 @@ function Home() {
           <Badge text={"fl studio"} color={"purple"} />
         </div>
       </div>
+      {/* 
       <div className="topicSeparation">
         <FeaturedRow
           buttonTo={"Websites"}
@@ -74,6 +77,7 @@ function Home() {
           image3={"/placeholder.jpeg"}
         />
       </div>
+      */}
       <div className="topicSeparation"></div>
       <div className="topicSeparation">
         <h3>Work experience</h3>

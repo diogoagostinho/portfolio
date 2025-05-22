@@ -43,13 +43,13 @@ function Navbar() {
               linkTo={"/games"}
               isArrow={false}
             />
-            <Button
+            {/* <Button
               text={"Music"}
               styleClass={"ghost"}
               isPop={false}
               linkTo={"/music"}
               isArrow={false}
-            />
+            /> */}
           </div>
         </div>
       </div>
